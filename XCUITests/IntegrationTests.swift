@@ -72,7 +72,6 @@ class IntegrationTests: BaseTestCase {
         waitForInitialSyncComplete()
     }
 
-    /* Disabling test until it is consistently working remotely
     func testFxASyncTabs () {
         navigator.openURL(testingURL)
         waitUntilPageLoad()
@@ -91,7 +90,7 @@ class IntegrationTests: BaseTestCase {
         app.buttons["Settings"].tap()
         app.tables.cells.element(boundBy: 1).tap()
         waitForExistence(app.tables.staticTexts["Sync Now"], timeout: 15)
-    }*/
+    }
 
     func testFxASyncLogins () {
         navigator.openURL("gmail.com")
